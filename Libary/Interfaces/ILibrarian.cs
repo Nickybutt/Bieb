@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Libary.Interfaces
 {
-    class ILibrarian
+    public interface ILibrarian
     {
         string Name { get; set; }
         int Age { get; set; }

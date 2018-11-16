@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Libary.Interfaces
 {
-    public interface IBook
+    public interface ILibrary : IIdentifiable
     {
-        string Title { get; set; }
-        string Author { get; set; }
-        string ISBN { get; set; }
-        int Pages { get; set; }
+        string Name { get; set; }
     }
 }
