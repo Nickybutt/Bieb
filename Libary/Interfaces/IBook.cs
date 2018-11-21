@@ -12,5 +12,6 @@ namespace Libary.Interfaces
         string Author { get; set; }
         string ISBN { get; set; }
         int Pages { get; set; }
+        bool IsAvailable { get; set; }
     }
 }

@@ -16,6 +16,17 @@ namespace Libary.Models
         public string ISBN { get; set; }
         public int Pages { get; set; }
         public BookType Genre { get; set; }
+        public bool IsAvailable { get; set; } = true;
+
+        public Book(string name, string author, int pages, string isbn, BookType genre, bool isAvailable)
+        {
+            string Name = name;
+            string Author = author;
+            int Pages = pages;
+            string ISBN = isbn;
+            BookType Genre = genre;
+            bool IsAvailable = isAvailable;
+        }
 
         public Book(string name, string author, int pages, string isbn, BookType genre)
         {

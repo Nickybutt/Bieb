@@ -12,6 +12,6 @@ namespace Libary.Interfaces
         int Age { get; set; }
         string WorkAttitude { get; set; }
         string Strictness { get; set; }
-
+        bool LibrarianIsAvailable { get; set; }
     }
 }

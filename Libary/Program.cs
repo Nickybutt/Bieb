@@ -11,6 +11,11 @@ namespace Libary
     {
         static void Main(string[] args)
         {
+            var library = new Library() {};
+
+            var nick = new Person() { Name = "Nick", age = 28, interested = "Thriller" };
+            nick.EntersTheBuilding(library);
+            Console.ReadLine();
         }
     }
 }

@@ -13,11 +13,13 @@ namespace Libary.Models
         public int age { get; set; }
         public string interested { get; set; }
         private List<Book> Books = new List<Book>();
+        private Library _currentLibrary;
 
 
-        public void EntersTheBuilding()
+        public void EntersTheBuilding(Library library)
         {
-            Console.WriteLine($"{Name} has entered the building");
+            _currentLibrary = library;
+            Console.WriteLine($"{Name} has entered the {library}");
         }
 
         public void LeftTheBuilding()
